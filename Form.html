@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FORMCSS.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">  
+    <title>Input Data</title>
+</head>
+<body class="bodybackground">
+    
+
+    <h2 class="center " id="heading"> Complaint Form</h2>
+    <article class="sidebox">
+        
+
+            <img class="image" src="https://diginomica.com/sites/default/files/styles/article_images_desktop/public/images/2016-08/Fotolia-Melpomene-117782591_Sub_740px.jpg?itok=6bMxoUFH" alt="Customer Satisfaction is our Goal"  width="380px" height="500 px" >
+    </article>
+
+    <form class="  fieldset font " action="backend.php">
+        
+        <fieldset class="formbackground" >
+            <legend class="legend" >Personal Details</legend>
+        <div >
+            <label  for="Fname">First Name:</label> 
+            
+            <!-- SEE LABEL feature by taking mouse on NAME    -->
+            
+            <input class="rightmargin" type="text" name="myFName" id="Fname" required>
+            <!-- "name" is track kr skte ha data and remains html link -->
+            
+            <span>
+            <label  for="Lname">
+                Last Name:</label> 
+            
+            
+            <input type="text" name="myLName" id="Lname">
+            </span>
+            <!-- "name" is track kr skte ha data and remains html link -->
+        </div>
+        <br>
+        <div>
+            <label for="gen">Gender:</label>
+            Male<input type="radio" name="mygender" id="">
+            Female <input class="rightmargin" type="radio" name="mygender" id=""> 
+        
+    <!-- to get email type "imput:e + enter" -->
+    <!-- select a particular div and press ALT + ^ -->
+        
+        <label  for="em"> Email:</l-abel> 
+         <input type="email" name=" myemail" id="em">
+    </div>  
+</fieldset>
+<fieldset class="formbackground">
+    <legend class="legend"   > Product Details</legend>
+    <div>
+        <label for="dob"> 
+        
+            Date of Purchase: <input  class="rightmargin" type="date" name="myDOB" id="dob">
+  </label> 
+    <label for="pdt">Product Type:&nbsp;&nbsp;&nbsp;</label>
+    <select name="mypdt" id="pdt" required>
+        <option value="">--Select the Product </option>
+        <option value="Laptop">Laptop</option>
+        <option value="PC">Personal Computer</option>
+        <option value="Printer">Printer</option>
+        <option value="Monitor">Monitor</option>
+    </select>
+    </div>
+    <!-- <p>Enter the Card Number <input type="password" name="mycard" id="CVV"></p> -->
+    <div class="upperlowermargin">
+        <label for="modelno."> Enter Model No. </label>
+        <input type="number" name="mymodelno." id="modelno.">
+    </div>
+    <div>
+        Your Complain: <br>
+        <textarea name="mytext" id="" cols="67" rows="10"></textarea>
+    </div>
+    <br>
+</fieldset>
+<button id="manageverify">
+    <label id="verify" for="verification" >
+        I am not a robot: 
+    
+    <input  type="checkbox" name="not a robot" id="verification" required>
+    </label>
+</button>
+     
+     <br>
+    <button  class="managebotton" style="background-color: yellow; align-self: center;">
+        <input class="colorbotton" type="button" value="SUBMIT NOW">
+        <input class="colorbotton" type="reset" value="RESET NOW">
+    </button>
+    </form>
+    
+</body> 
+</html>
